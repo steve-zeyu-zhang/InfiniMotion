@@ -2,7 +2,7 @@
 <!-- <sub><sup><a href="">Under Review</a></sup></sub> -->
 </h1>
 
-[Zeyu Zhang](https://steve-zeyu-zhang.github.io), [Akide Liu](https://www.linkedin.com/in/akideliu/), [Qi Chen](), [Feng Chen](), [Ian Reid](https://mbzuai.ac.ae/study/faculty/ian-reid/), [Richard Hartley](http://users.cecs.anu.edu.au/~hartley/), [Bohan Zhuang](https://bohanzhuang.github.io/), [Hao Tang](https://ha0tang.github.io/)<sup>✉</sup>
+[Zeyu Zhang](https://steve-zeyu-zhang.github.io), [Akide Liu](https://www.linkedin.com/in/akideliu/), [Qi Chen](https://scholar.google.com/citations?hl=zh-CN&user=OgKU77kAAAAJ), [Feng Chen](https://github.com/Chenfeng1271), [Ian Reid](https://mbzuai.ac.ae/study/faculty/ian-reid/), [Richard Hartley](http://users.cecs.anu.edu.au/~hartley/), [Bohan Zhuang](https://bohanzhuang.github.io/), [Hao Tang](https://ha0tang.github.io/)<sup>✉</sup>
 
 <sup>✉</sup>Corresponding author: bjdxtanghao@gmail.com
 
