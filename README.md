@@ -18,7 +18,7 @@ _Text-to-motion generation holds potential for film, gaming, and robotics, yet c
 
 <div align="center">
 <img src="static/images/main.svg" style="width: 100%;">
-<img src="static/images/block.svg" style="width: 80%;">
+<img src="static/images/demo.svg" style="width: 80%;">
 </div>
 
 ## News
@@ -29,6 +29,14 @@ _Text-to-motion generation holds potential for film, gaming, and robotics, yet c
 
 
 ```
-Coming soon.
+@article{Zhang2024,
+  title         = {InfiniMotion: Mamba Boosts Memory in Transformer for Arbitrary Long Motion Generation},
+  author        = {Zhang, Zeyu and Liu, Akide and Chen, Qi and Chen, Feng and Reid, Ian and Hartley, Richard and Zhuang, Bohan and Tang, Hao},
+  year          = {2024},
+  url           = {http://arxiv.org/pdf/2407.10061},
+  eprint        = {2407.10061},
+  archiveprefix = {arXiv},
+  primaryclass  = {astro-ph.IM}
+}
 ```
 

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Motion Avatar</title>
+  <link rel="icon" type="image/x-icon" href="static/images/run.svg">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <!-- bulma css template -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- model viewer -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Motion Avatar: Generate Human and Animal Avatars with Arbitrary Motion</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://steve-zeyu-zhang.github.io/" target="_blank">Zeyu Zhang</a><sup>1*</sup>,
+              </span>
+
+                <span class="author-block">
+                  <a href="https://github.com/u7079256" target="_blank">Yiran Wang</a><sup>1*</sup>,
+                </span>
+
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=Y3SBBWMAAAAJ&hl=en" target="_blank">Biao Wu</a><sup>2*</sup>,
+                </span>
+
+                <span class="author-block">
+                  <a href="https://www.linkedin.com/in/shuo-chen-7747a7246/" target="_blank">Shuo Chen</a><sup>3</sup>,
+                </span>
+
+                <span class="author-block">
+                  <a href="https://github.com/Tiooo111" target="_blank">Zhiyuan Zhang</a><sup>4</sup>,
+                </span>
+
+                <span class="author-block">
+                  <a href="https://github.com/gekelly" target="_blank">Shiya Huang</a><sup>4</sup>,
+                </span>
+
+                <span class="author-block">
+                  <a href="https://zwbx.github.io/" target="_blank">Wenbo Zhang</a><sup>4</sup>,
+                </span>
+
+                <span class="author-block">
+                  <a href="https://mengf1.github.io/" target="_blank">Meng Fang</a><sup>5</sup>,
+                </span>
+
+                <span class="author-block">
+                  <a href="https://profiles.uts.edu.au/Ling.Chen" target="_blank">Ling Chen</a><sup>2</sup>,
+                </span>
+
+                <span class="author-block">
+                  <a href="https://yangyangkiki.github.io/" target="_blank">Yang Zhao</a><sup>6✉</sup>
+                </span>
+
+                  </div>
+
+                  <p style="height: 10px;">&nbsp;</p> 
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><font size="4"><sup>1</sup> <a href="https://www.anu.edu.au/" target="_blank">The Australian National University</a></font></span>
+                    <span class="author-block"><font size="4"><sup>2</sup> <a href="https://www.uts.edu.au/" target="_blank">University of Technology Sydney</a></font></span><br>
+                    <span class="author-block"><font size="4"><sup>3</sup> <a href="https://www.monash.edu/" target="_blank">Monash University</a></font></span>
+                    <span class="author-block"><font size="4"><sup>4</sup> <a href="https://www.adelaide.edu.au/" target="_blank">The University of Adelaide</a></font></span><br>
+                    <span class="author-block"><font size="4"><sup>5</sup> <a href="https://www.liverpool.ac.uk/" target="_blank">University of Liverpool</a></font></span>
+                    <span class="author-block"><font size="4"><sup>6</sup> <a href="https://www.latrobe.edu.au/" target="_blank">La Trobe University</a></font></span><br>
+                    <!-- <p style="height: 10px;">&nbsp;</p> 
+                    <span class="author-block"><font size="5"><b><a href="www.google.com" target="_blank">Under Review</a></b></font></span><br> -->
+                    <p style="height: 10px;">&nbsp;</p>
+                    <span class="eql-cntrb"><small><sup>*</sup>Equal Contribution.</small></span>
+                    <span class="eql-cntrb"><small><sup>✉</sup>Corresponding author.</small></span><br>
+                  </div>
+
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Paper link -->
+                      <!-- <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span> -->
+
+                    <!-- Supplementary link -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2405.11286" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/steve-zeyu-zhang/MotionAvatar" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- Citation Link -->
+                <span class="link-block">
+                  <a href="https://github.com/steve-zeyu-zhang/MotionAvatar" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span>Dataset</span>
+                </a>
+              </span>
+
+                <!-- Citation Link -->
+                <span class="link-block">
+                  <a href="static/scholar.html" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span>BibTeX</span>
+                </a>
+              </span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Teaser video-->
+    <!-- <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/gK3cgMo0Eos?si=ZIb9-slD7_1AHvFi" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- End teaser video -->
+  </div>
+</section>
+
+
+<div class="news">
+  <h2><font size="4"> <b>News:</b> </font></h2>
+  <ul>
+    <li><b>(05/23/2024)</b> &#127881; Our paper has been promoted by <a href="https://twitter.com/ai_bites/status/1792907754727744000"><b>AI Bites</b></a>!</li>
+    <li><b>(05/22/2024)</b> &#127881; Our paper has been promoted by <a href="https://www.reddit.com/r/languagemodeldigest/comments/1cxqebo/create_3d_avatars_with_text_prompts_with_this_new/"><b>Language Model Digest</b></a>!</li>
+    <li><b>(05/21/2024)</b> &#127881; Our paper has been promoted by <a href="https://x.com/CSVisionPapers/status/1792975365842817444"><b>CSVisionPapers</b></a>!</li>
+  </ul>
+</div>
+
+<p style="height: 50px;">&nbsp;</p>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In recent years, there has been significant interest in creating 3D avatars and motions,
+driven by their diverse applications in areas like film-making, video games, AR/VR, and
+human-robot interaction. However, current efforts primarily concentrate on either generating the 3D avatar mesh alone or producing motion sequences, with integrating these
+two aspects proving to be a persistent challenge. Additionally, while avatar and motion
+generation predominantly target humans, extending these techniques to animals remains
+a significant challenge due to inadequate training data and methods. To bridge these gaps,
+our paper presents three key contributions. Firstly, we proposed a novel agent-based approach named <b>Motion Avatar</b>, which allows for the automatic generation of high-quality
+customizable human and animal avatars with motions through text queries. The method
+significantly advanced the progress in dynamic 3D character generation. Secondly, we
+introduced a <b>LLM planner</b> that coordinates both motion and avatar generation, which
+transforms a discriminative planning into a customizable Q&A fashion. Lastly, we presented an animal motion dataset named <b>Zoo-300K</b>, comprising approximately <b>300,000</b>
+text-motion pairs across <b>65</b> animal categories and its building pipeline <b>ZooGen</b>, which
+serves as a valuable resource for the community.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Visualization</h2>
+      <!--  camera-orbit="-25.13deg 82.41deg 2.219m" field-of-view="30deg" -->
+
+      <div class="level">
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/a1.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A demon girl with blue hair is running fast.</p>
+            </div>
+        </div>
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/a2.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A demon girl with blue hair spins rapidly.</p>
+            </div>
+        </div>
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/a3.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A demon girl with blue hair holds her left foot with her left hand.</p>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="level">
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/b1.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">Luigi is bending his leg.</p>
+            </div>
+        </div>
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/b2.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">Luigi is doing kung fu.</p>
+            </div>
+        </div>
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/b3.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">Luigi is rolling his hands.</p>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="level">
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/c1.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">Michelin Man is dancing zumba.</p>
+            </div>
+        </div>
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/c2.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">Michelin Man looking around himself.</p>
+            </div>
+        </div>
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/c3.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">Michelin Man raised up his hand and shake.</p>
+            </div>
+        </div>
+      </div>
+      
+      
+      <div class="level">
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/d1.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A yellow humanoid Yacuruna does a baseball hit.</p>
+            </div>
+        </div>
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/d2.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A yellow humanoid Yacuruna is crossing his arm.</p>
+            </div>
+        </div>
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/d3.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A yellow humanoid Yacuruna is jumping</p>
+            </div>
+        </div>
+      </div>      
+      
+
+      <div class="level">
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/e1.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A red robot is boxing.</p>
+            </div>
+        </div>
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/e2.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A red robot is doing hip pop dancing.</p>
+            </div>
+        </div>
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/e3.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A red robot is saluting.</p>
+            </div>
+        </div>
+      </div>      
+
+
+      <div class="level">
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/f1.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A bear runs then stands then runs again.</p>
+            </div>
+        </div>
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/f2.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A bear walks then stands.</p>
+            </div>
+        </div>
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/f3.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A bear runs then walks hesitantly.</p>
+            </div>
+        </div>
+      </div>      
+
+
+      <div class="level">
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/g1.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A jaguar attacks then dies.</p>
+            </div>
+        </div>
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/g2.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A jaguar gets up then walks.</p>
+            </div>
+        </div>
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/g3.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A bear walks then attacks.</p>
+            </div>
+        </div>
+      </div>      
+
+
+      <div class="level">
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/h1.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A wolf attacks then howls.</p>
+            </div>
+        </div>
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/h2.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A wolf runs then attacks then runs.</p>
+            </div>
+        </div>
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/h3.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A wolf walks then dies.</p>
+            </div>
+        </div>
+      </div>   
+
+
+      <div class="level">
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/i1.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A horse attacks, then walks backward, and attacks again.</p>
+            </div>
+        </div>
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/i2.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A horse walks, then rears up, and then walks again.</p>
+            </div>
+        </div>
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/i3.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A horse rears up and then walks forward.</p>
+            </div>
+        </div>
+      </div> 
+
+
+
+
+      <div class="level">
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/j1.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">An anaconda first coils up and then attacks.</p>
+            </div>
+        </div>
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/j2.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">An anaconda first swings its tail and then rises.</p>
+            </div>
+        </div>
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/j3.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">An anaconda first attacks and then spins.</p>
+            </div>
+        </div>
+      </div> 
+
+
+      <div class="level">
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/k1.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A rapator first walks, then attacks, and then walks again.</p>
+            </div>
+        </div>
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/k2.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A rapator first walks then dies.</p>
+            </div>
+        </div>
+        <div class="level-item">
+            <div class="model-container">
+                <model-viewer src="static/meshes/k3.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
+                <p style="height: 10px;">&nbsp;</p>
+                <p class="caption">A rapator first walks, then roars, and then walks again.</p>
+            </div>
+        </div>
+      </div> 
+
+
+</div>
+</div>
+</section>
+
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">More Visualization</h2>
+
+      <div class="image-container">
+        <center>
+        <img src="static/images/motion.svg" style="width: 90%;">
+        <div class="image-description">
+          <p style="height: 10px;">&nbsp;</p><br>
+          <p>The figure illustrates various examples of animal motion generated by Motion
+            Avatar, demonstrating its ability to produce high-quality motion and mesh for both human
+            and animal characters.</p><br>
+        </div>
+        </center>
+      </div>
+</div>
+</div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Methodology</h2>
+
+      <div class="image-container">
+        <center>
+        <img src="static/images/main-1.svg" style="width: 65%;">
+        <div class="image-description">
+          <p style="height: 10px;">&nbsp;</p><br>
+          <p><b>Motion Avatar</b> utilizes a LLM-agent based approach to manage user queries and produce tailored
+            prompts. These prompts are designed to facilitate both the generation of motion sequences and the creation of
+            3D meshes. Motion generation follows an autoregressive process, while mesh generation operates within an image-to-3D framework. Subsequently, the generated mesh undergoes an automatic rigging process, allowing the motion
+            to be retargeted to the rigged mesh.</p><br>
+        </div>
+        </center>
+      </div>
+</div>
+</div>
+</section>
+
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Dataset</h2>
+
+      <div class="image-container">
+        <center>
+        <img src="static/images/zoogen.svg" style="width: 65%;">
+        <div class="image-description">
+          <p style="height: 10px;">&nbsp;</p><br>
+          <p>The diagram illustrates the process of our proposed <b>ZooGen</b>. Initially, <a href="https://sinmdm.github.io/SinMDM-page/" style="color: blue;">SinMDM</a> is employed to edit and enhance motion within <a href="https://truebones.gumroad.com/l/skZMC" style="color: blue;">Truebones Zoo</a>. Subsequently, 
+            <a href="https://github.com/DAMO-NLP-SG/Video-LLaMA" style="color: blue;">Video-LLaMA</a> is utilized to describe the motion in a paragraph, followed by refinement using
+            <a href="https://huggingface.co/meta-llama/Meta-Llama-3-70B" style="color: blue;">LLaMA-70B</a>. Finally, human review is conducted on the motion captions, which are
+            then gathered as textual descriptions in the <b>Zoo-300K</b> dataset</p><br>
+        </div>
+        </center>
+      </div>
+</div>
+</div>
+</section>
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{zhang2024motion,
+  title={Motion Avatar: Generate Human and Animal Avatars with Arbitrary Motion},
+  author={Zhang, Zeyu and Wang, Yiran and Wu, Biao and Chen, Shuo and Zhang, Zhiyuan and Huang, Shiya and Zhang, Wenbo and Fang, Meng and Chen, Ling and Zhao, Yang},
+  journal={arXiv preprint arXiv:2405.11286},
+  year={2024}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <!-- <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer> -->
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
