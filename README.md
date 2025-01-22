@@ -18,7 +18,7 @@ _Text-to-motion generation holds potential for film, gaming, and robotics, yet c
 
 <div align="center">
 <img src="static/images/main.svg" style="width: 100%;">
-<img src="static/images/demo.svg" style="width: 80%;">
+<img src="static/images/demo.svg" style="width: 100%;">
 </div>
 
 ## News
