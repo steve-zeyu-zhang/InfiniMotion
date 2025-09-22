@@ -1,8 +1,18 @@
-<div align="center"><h1> InfiniMotion: Mamba Boosts Memory in Transformer for Arbitrary Long Motion Generation<br>
+<div align="center"><h1> InfiniMotion: Mamba in Mamba for Long Motion Generation<br>
 <!-- <sub><sup><a href="">Under Review</a></sup></sub> -->
 </h1>
 
-[Zeyu Zhang](https://steve-zeyu-zhang.github.io), [Akide Liu](https://www.linkedin.com/in/akideliu/), [Qi Chen](https://scholar.google.com/citations?hl=zh-CN&user=OgKU77kAAAAJ), [Feng Chen](https://github.com/Chenfeng1271), [Ian Reid](https://mbzuai.ac.ae/study/faculty/ian-reid/), [Richard Hartley](http://users.cecs.anu.edu.au/~hartley/), [Bohan Zhuang](https://bohanzhuang.github.io/), [Hao Tang](https://ha0tang.github.io/)<sup>✉</sup>
+[Zeyu Zhang](https://steve-zeyu-zhang.github.io),
+[Akide Liu](https://www.linkedin.com/in/akideliu/),
+[Qi Chen](https://scholar.google.com/citations?hl=zh-CN&user=OgKU77kAAAAJ),
+[Feng Chen](https://github.com/Chenfeng1271),
+[Yiran Wang](https://www.linkedin.com/in/yiran-wang-101739246/),
+[Danning Li](https://www.linkedin.com/in/danning-li-448039229/),
+[Akira Zhao](https://www.linkedin.com/in/akira-zhao/),
+[Ling Shao](https://ling-shao.github.io/),
+[Ian Reid](https://mbzuai.ac.ae/study/faculty/ian-reid/),
+[Richard Hartley](http://users.cecs.anu.edu.au/~hartley/),
+[Hao Tang](https://ha0tang.github.io/)<sup>✉</sup>
 
 <sup>✉</sup>Corresponding author: bjdxtanghao@gmail.com
 
@@ -12,14 +22,15 @@
 <!--[![BibTeX](https://img.shields.io/badge/BibTeX-Citation-eeeeee?style=flat-square)](https://steve-zeyu-zhang.github.io/MotionMamba/static/scholar.html)-->
 
 
+https://github.com/user-attachments/assets/f55deb2d-e062-4ad5-bf5c-004d241d5f63
+
+
+
 </div>
 
 _Text-to-motion generation holds potential for film, gaming, and robotics, yet current methods often prioritize short motion generation, making it challenging to produce long motion sequences effectively: (1) Current methods struggle to handle long motion sequences as a single input due to prohibitively high computational cost; (2) Breaking down the generation of long motion sequences into shorter segments can result in inconsistent transitions and requires interpolation or inpainting, which lacks entire sequence modeling. To solve these challenges, we propose **InfiniMotion**, a method that generates continuous motion sequences of arbitrary length within an autoregressive framework. We highlight its groundbreaking capability by generating a continuous **1-hour** human motion with around **80,000** frames. Specifically, we introduce the Motion Memory Transformer with Bidirectional Mamba Memory, enhancing the transformer's memory to process long motion sequences effectively without overwhelming computational resources. Notably our method achieves over **30%** improvement in FID and **6** times longer demonstration compared to previous state-of-the-art methods, showcasing significant advancements in long motion generation._
 
-<div align="center">
-<img src="static/images/main.svg" style="width: 100%;">
-<img src="static/images/demo.svg" style="width: 100%;">
-</div>
+![architecture](https://github.com/user-attachments/assets/d5fdb39a-c99e-4ff9-85d0-47d8bbf485c2)
 
 ## News
 
