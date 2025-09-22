@@ -43,15 +43,49 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
-  <!-- bulma css template -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <!-- ionicons -->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <!-- model viewer -->
-  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
 </head>
 <body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://steve-zeyu-zhang.github.io/">
+        <span class="icon">
+            <i class="fas fa-home"></i>
+        </span>
+        </a>
+  
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://steve-zeyu-zhang.github.io/MotionAnything">
+              Motion Anything
+            </a>
+            <a class="navbar-item" href="https://steve-zeyu-zhang.github.io/MotionMamba">
+              Motion Mamba
+            </a>
+            <a class="navbar-item" href="https://steve-zeyu-zhang.github.io/MotionAvatar">
+              Motion Avatar
+            </a>
+            <a class="navbar-item" href="https://steve-zeyu-zhang.github.io/KMM/">
+              KMM
+            </a>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </nav>
 
 
   <section class="hero">
@@ -59,72 +93,54 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Motion Mamba: </h1>
+            <h1 class="title is-1 publication-title">InfiniMotion: Mamba in Mamba for Long Motion Generation</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://steve-zeyu-zhang.github.io/" target="_blank">Zeyu Zhang</a><sup>1*</sup>,
-              </span>
-
+                <a href="https://steve-zeyu-zhang.github.io/" target="_blank">Zeyu Zhang</a><sup>1</sup>&nbsp</span>
                 <span class="author-block">
-                  <a href="https://github.com/u7079256" target="_blank">Yiran Wang</a><sup>1*</sup>,
-                </span>
-
-                <span class="author-block">
-                  <a href="https://scholar.google.com/citations?user=Y3SBBWMAAAAJ&hl=en" target="_blank">Biao Wu</a><sup>2*</sup>,
-                </span>
-
-                <span class="author-block">
-                  <a href="https://www.linkedin.com/in/shuo-chen-7747a7246/" target="_blank">Shuo Chen</a><sup>3</sup>,
-                </span>
-
-                <span class="author-block">
-                  <a href="https://github.com/Tiooo111" target="_blank">Zhiyuan Zhang</a><sup>4</sup>,
-                </span>
-
-                <span class="author-block">
-                  <a href="https://github.com/gekelly" target="_blank">Shiya Huang</a><sup>4</sup>,
-                </span>
-
-                <span class="author-block">
-                  <a href="https://zwbx.github.io/" target="_blank">Wenbo Zhang</a><sup>4</sup>,
-                </span>
-
-                <span class="author-block">
-                  <a href="https://mengf1.github.io/" target="_blank">Meng Fang</a><sup>5</sup>,
-                </span>
-
-                <span class="author-block">
-                  <a href="https://profiles.uts.edu.au/Ling.Chen" target="_blank">Ling Chen</a><sup>2</sup>,
-                </span>
-
-                <span class="author-block">
-                  <a href="https://yangyangkiki.github.io/" target="_blank">Yang Zhao</a><sup>6✉</sup>
-                </span>
-
+                  <a href="https://www.linkedin.com/in/akideliu/" target="_blank">Akide Liu</a><sup>2</sup>&nbsp</span>
+                    <span class="author-block">
+                      <a href="https://chenqi008.github.io/" target="_blank">Qi Chen</a><sup>3</sup>&nbsp</span>
+                      <span class="author-block">
+                        <a href="https://github.com/Chenfeng1271" target="_blank">Feng Chen</a><sup>3</sup>&nbsp</span>
+                        <span class="author-block">
+                          <a href="https://www.linkedin.com/in/yiran-wang-101739246/" target="_blank">Yiran Wang</a><sup>4</sup>&nbsp</span>
+                          <span class="author-block">
+                            <a href="https://www.linkedin.com/in/danning-li-448039229/" target="_blank">Danning Li</a><sup>4</sup></span><br>
+                            <span class="author-block">
+                              <a href="https://www.linkedin.com/in/akira-zhao/" target="_blank">Akira Zhao</a><sup>4</sup>&nbsp</span>
+                              <span class="author-block">
+                                <a href="https://ling-shao.github.io/" target="_blank">Ling Shao</a><sup>5</sup>&nbsp</span>
+                                <span class="author-block">
+                                  <a href="https://mbzuai.ac.ae/study/faculty/ian-reid/" target="_blank">Ian Reid</a><sup>6</sup>&nbsp</span>
+                                  <span class="author-block">
+                                    <a href="https://users.cecs.anu.edu.au/~hartley/" target="_blank">Richard Hartley</a><sup>1</sup>&nbsp</span>
+                              <span class="author-block">
+                              <a href="https://ha0tang.github.io/" target="_blank">Hao Tang</a><sup>7</sup><sup>✉</sup></span>
+                  </span>
                   </div>
-
                   <p style="height: 10px;">&nbsp;</p> 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><font size="4"><sup>1</sup> <a href="https://www.anu.edu.au/" target="_blank">The Australian National University</a></font></span>
-                    <span class="author-block"><font size="4"><sup>2</sup> <a href="https://www.uts.edu.au/" target="_blank">University of Technology Sydney</a></font></span><br>
-                    <span class="author-block"><font size="4"><sup>3</sup> <a href="https://www.monash.edu/" target="_blank">Monash University</a></font></span>
-                    <span class="author-block"><font size="4"><sup>4</sup> <a href="https://www.adelaide.edu.au/" target="_blank">The University of Adelaide</a></font></span><br>
-                    <span class="author-block"><font size="4"><sup>5</sup> <a href="https://www.liverpool.ac.uk/" target="_blank">University of Liverpool</a></font></span>
-                    <span class="author-block"><font size="4"><sup>6</sup> <a href="https://www.latrobe.edu.au/" target="_blank">La Trobe University</a></font></span><br>
-                    <!-- <p style="height: 10px;">&nbsp;</p> 
-                    <span class="author-block"><font size="5"><b><a href="www.google.com" target="_blank">Under Review</a></b></font></span><br> -->
-                    <p style="height: 10px;">&nbsp;</p>
-                    <span class="eql-cntrb"><small><sup>*</sup>Equal Contribution.</small></span>
+                    <span class="author-block"><font size="4"><sup>1</sup><a href="https://www.anu.edu.au/" target="_blank">ANU</a></font></span>
+                    <span class="author-block"><font size="4"><sup>2</sup><a href="https://www.monash.edu/" target="_blank">Monash</a></font></span>
+                    <span class="author-block"><font size="4"><sup>3</sup><a href="https://www.adelaide.edu.au/" target="_blank">AIML</a></font></span>
+                    <span class="author-block"><font size="4"><sup>4</sup><a href="https://aigeeksgroup.github.io/" target="_blank">AI Geeks</a></font></span>
+                    <span class="author-block"><font size="4"><sup>5</sup><a href="https://english.ucas.ac.cn/" target="_blank">UCAS</a></font></span>
+                    <span class="author-block"><font size="4"><sup>6</sup><a href="https://mbzuai.ac.ae/" target="_blank">MBZUAI</a></font></span>
+                    <span class="author-block"><font size="4"><sup>7</sup><a href="https://english.pku.edu.cn/" target="_blank">PKU</a></font></span>
+                    <p style="height: 10px;">&nbsp;</p> 
+                    <!-- <span class="author-block"><font size="5"><a href="" target="_blank"><b>Conference 2026</b></a></font></span><br> -->
+                    <!-- <span class="eql-cntrb"><small><sup>*</sup>Equal Contribution.</small></span> -->
                     <span class="eql-cntrb"><small><sup>✉</sup>Corresponding author.</small></span><br>
+                    <!-- <span class="eql-cntrb"><small><sup>†</sup>Work done while being a visiting student researcher at Peking University.</small></span> -->
                   </div>
-
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Paper link -->
                       <!-- <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://conference.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -144,9 +160,9 @@
                     </a>
                   </span> -->
 
-                <!-- ArXiv abstract Link -->
+              <!-- ArXiv Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2405.11286" target="_blank"
+                  <a href="https://arxiv.org/abs/2407.10061" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -157,7 +173,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/steve-zeyu-zhang/MotionAvatar" target="_blank"
+                    <a href="https://github.com/steve-zeyu-zhang/InfiniMotion" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -166,13 +182,16 @@
                   </a>
                 </span>
 
-                <!-- Citation Link -->
-                <span class="link-block">
-                  <a href="https://github.com/steve-zeyu-zhang/MotionAvatar" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span>Dataset</span>
-                </a>
-              </span>
+                <!-- Hugging Face Link -->
+                  <span class="link-block">
+                    <a href="https://huggingface.co/papers/2407.10061" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <img src="static/images/hfbw.svg" style="width: 70%;">
+                    </span>
+                    <span>Hugging Face</span>
+                  </a>
+                </span>
 
                 <!-- Citation Link -->
                 <span class="link-block">
@@ -182,37 +201,72 @@
                 </a>
               </span>
 
+                      
             </div>
-          </div>
+          </div>          
         </div>
       </div>
     </div>
-    <!-- Teaser video-->
-    <!-- <div class="container">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <div class="publication-video">
-            <iframe src="https://www.youtube.com/embed/gK3cgMo0Eos?si=ZIb9-slD7_1AHvFi" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- End teaser video -->
   </div>
 </section>
 
 
-<div class="news">
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/teaser.mp4"
+        type="video/mp4">
+      </video>
+      <!-- <h2 class="subtitle has-text-centered">
+        Eric Prydz - Call on Me (French House)
+      </h2> -->
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- <div class="news">
   <h2><font size="4"> <b>News:</b> </font></h2>
   <ul>
-    <li><b>(05/23/2024)</b> &#127881; Our paper has been promoted by <a href="https://twitter.com/ai_bites/status/1792907754727744000"><b>AI Bites</b></a>!</li>
-    <li><b>(05/22/2024)</b> &#127881; Our paper has been promoted by <a href="https://www.reddit.com/r/languagemodeldigest/comments/1cxqebo/create_3d_avatars_with_text_prompts_with_this_new/"><b>Language Model Digest</b></a>!</li>
-    <li><b>(05/21/2024)</b> &#127881; Our paper has been promoted by <a href="https://x.com/CSVisionPapers/status/1792975365842817444"><b>CSVisionPapers</b></a>!</li>
+    <li><b>(07/22/2024)</b> &#127881; Our paper was invited for a talk at <a href="https://www.mihoyo.com/"><b>miHoYo</b></a>. You can find our slides <a href="https://steve-zeyu-zhang.github.io/MotionMamba/static/pdfs/Motion_Mamba_Slides_miHoYo.pdf"><b>here</b></a>!</li>
+  </ul>
+  <ul>
+    <li><b>(07/05/2024)</b> &#127881; Our paper has been highlighted twice by <a href="https://wx.zsxq.com/dweb2/index/topic_detail/5122458815888184"><b>CVer</b></a>!</li>
+  </ul>
+  <ul>
+    <li><b>(07/02/2024)</b> &#127881; Our paper has been accepted to <a href="https://eccv2024.ecva.net/"><b style="color: OrangeRed;">ECCV 2024</b></a>!</li>
+  </ul>
+  <ul>
+    <li><b>(03/15/2024)</b> &#127881; Our paper has been highlighted by <a href="https://twitter.com/Marktechpost/status/1768770427680424176"><b>MarkTechPost</b></a>!</li>
+  </ul>
+  <ul>
+    <li><b>(03/13/2024)</b> &#127881; Our paper has been featured in <a href="https://twitter.com/_akhaliq/status/1767750847239262532"><b>Daily Papers</b></a>!</li>
+  </ul>
+  <ul>
+    <li><b>(03/13/2024)</b> &#127881; Our paper has been highlighted by <a href="https://wx.zsxq.com/dweb2/index/topic_detail/1522541851241522"><b>CVer</b></a>!</li>
   </ul>
 </div>
 
-<p style="height: 50px;">&nbsp;</p>
+<p style="height: 50px;">&nbsp;</p> -->
 
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser video -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -222,19 +276,11 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            In recent years, there has been significant interest in creating 3D avatars and motions,
-driven by their diverse applications in areas like film-making, video games, AR/VR, and
-human-robot interaction. However, current efforts primarily concentrate on either generating the 3D avatar mesh alone or producing motion sequences, with integrating these
-two aspects proving to be a persistent challenge. Additionally, while avatar and motion
-generation predominantly target humans, extending these techniques to animals remains
-a significant challenge due to inadequate training data and methods. To bridge these gaps,
-our paper presents three key contributions. Firstly, we proposed a novel agent-based approach named <b>Motion Avatar</b>, which allows for the automatic generation of high-quality
-customizable human and animal avatars with motions through text queries. The method
-significantly advanced the progress in dynamic 3D character generation. Secondly, we
-introduced a <b>LLM planner</b> that coordinates both motion and avatar generation, which
-transforms a discriminative planning into a customizable Q&A fashion. Lastly, we presented an animal motion dataset named <b>Zoo-300K</b>, comprising approximately <b>300,000</b>
-text-motion pairs across <b>65</b> animal categories and its building pipeline <b>ZooGen</b>, which
-serves as a valuable resource for the community.
+            Text-to-motion generation holds potential for film, gaming, and robotics, yet current methods often prioritize short motion generation, making it challenging to produce long motion sequences effectively: (1) Current methods struggle to handle long motion sequences as a single input due to prohibitively high computational cost; 
+(2) Breaking down the generation of long motion sequences into shorter segments can result in inconsistent transitions and requires interpolation or inpainting, which lacks entire sequence modeling. 
+To address these challenges, we introduce <b>InfiniMotion</b>, a pioneering mamba-in-mamba architecture that recurrently updates both the Transformer's memory and the Mamba's memory to enhance long-motion generation.
+To improve the effectiveness and robustness of human motion generation, we introduce a similarity-based masking strategy that selectively masks key frames and key joints in the temporal and spatial dimensions, respectively. Additionally, we propose a hybrid architecture comprising the Mask Temporal Mamba and Mask Spatial Transformer, designed to process temporal and spatial information independently.
+Notably, our method achieves more than a <b>15%</b> improvement in FID on the BABEL dataset compared to previous state-of-the-art approaches, demonstrating substantial progress in long motion generation.
           </p>
         </div>
       </div>
@@ -243,356 +289,474 @@ serves as a valuable resource for the community.
 </section>
 <!-- End paper abstract -->
 
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Third image description.
+       </h2>
+     </div>
+     <div class="item">
+      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section> -->
+<!-- End image carousel -->
+
+
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Visualization</h2>
-      <!--  camera-orbit="-25.13deg 82.41deg 2.219m" field-of-view="30deg" -->
 
-      <div class="level">
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/a1.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A demon girl with blue hair is running fast.</p>
+
+            <!-- Video Row Section -->
+          <div class="video-row">
+            <!-- Video 1 Container -->
+            <div class="video-container">
+                <video controls autoplay muted loop>
+                    <source src="static/videos/demo/1.mp4" type="video/mp4">
+                </video>
+                <div class="caption">A person walks forward, a person bends down looking like a chicken, a person running and pick up an object.</div>
+            </div>
+
+            <!-- Video 2 Container -->
+            <div class="video-container">
+                <video controls autoplay muted loop>
+                    <source src="static/videos/demo/2.mp4" type="video/mp4">
+                </video>
+                <div class="caption">A person bend down with both hands and feet touch ground like a bridge, stand up and do jogging.</div>
+            </div>
+
+            <!-- Video 3 Container -->
+            <div class="video-container">
+                <video controls autoplay muted loop>
+                    <source src="static/videos/demo/3.mp4" type="video/mp4">
+                </video>
+                <div class="caption">A person sit down and stand up for multiple time. A person doing a forward kick with. A person scratches their head, A person with arm up and to the side, lowers arms and rotates in circular motion.</div>
             </div>
         </div>
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/a2.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A demon girl with blue hair spins rapidly.</p>
+
+
+          <!-- Video Row Section -->
+          <div class="video-row">
+            <!-- Video 1 Container -->
+            <div class="video-container">
+                <video controls autoplay muted loop>
+                    <source src="static/videos/demo/4.mp4" type="video/mp4">
+                </video>
+                <div class="caption">A person sit down with both knees. A person is doing jumping jacks like work-out.</div>
+            </div>
+
+            <!-- Video 2 Container -->
+            <div class="video-container">
+                <video controls autoplay muted loop>
+                    <source src="static/videos/demo/5.mp4" type="video/mp4">
+                </video>
+                <div class="caption">A man put both arms in parallel, raise up above head, touch head with both hands, greet someone for a while, walking forward carefully like touching the rail.</div>
+            </div>
+
+            <!-- Video 3 Container -->
+            <div class="video-container">
+                <video controls autoplay muted loop>
+                    <source src="static/videos/demo/6.mp4" type="video/mp4">
+                </video>
+                <div class="caption">A man walks only one step forward. A man doing swimming in the pool.</div>
             </div>
         </div>
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/a3.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A demon girl with blue hair holds her left foot with her left hand.</p>
+
+
+          <!-- Video Row Section -->
+          <div class="video-row">
+            <!-- Video 1 Container -->
+            <div class="video-container">
+                <video controls autoplay muted loop>
+                    <source src="static/videos/demo/7.mp4" type="video/mp4">
+                </video>
+                <div class="caption">A a man is dancing along the music. A man make a pose like putting both hands in front of the chest.</div>
+            </div>
+
+            <!-- Video 2 Container -->
+            <div class="video-container">
+                <video controls autoplay muted loop>
+                    <source src="static/videos/demo/8.mp4" type="video/mp4">
+                </video>
+                <div class="caption">A man leans forward to pick up an object slightly to his left, and places it down slightly to his right. A person is doing jumping jacks.</div>
+            </div>
+
+            <!-- Video 3 Container -->
+            <div class="video-container">
+                <video controls autoplay muted loop>
+                    <source src="static/videos/demo/9.mp4" type="video/mp4">
+                </video>
+                <div class="caption">A person reach out both arms away from legs, use left hand to pick up some thing from the ground, sit down and stand up again.</div>
             </div>
         </div>
+
+
+        <!-- Video Row Section -->
+        <div class="video-row">
+          <!-- Video 1 Container -->
+          <div class="video-container">
+              <video controls autoplay muted loop>
+                  <source src="static/videos/demo/10.mp4" type="video/mp4">
+              </video>
+              <div class="caption">A person stretches their left shoulder, bringing it back , rotating it and then switches to their right shoulder, bringing it back twice, rotating it twice. They then move to warming up or stretching out their elbow joint by bringing their hand to their shoulder and then extend it fully and turn their inner arm outwards. Someone working out the left arm.</div>
+          </div>
+
+          <!-- Video 2 Container -->
+          <div class="video-container">
+              <video controls autoplay muted loop>
+                  <source src="static/videos/demo/11.mp4" type="video/mp4">
+              </video>
+              <div class="caption">Putting both hands in front the chest and slowly moving both arms parallel to the ground. A person step back a bit, sitting on a chair.</div>
+          </div>
+
+          <!-- Video 3 Container -->
+          <div class="video-container">
+              <video controls autoplay muted loop>
+                  <source src="static/videos/demo/12.mp4" type="video/mp4">
+              </video>
+              <div class="caption">A person kneels down on both knees. A person walks slowly forward holding handrail with right hand.</div>
+          </div>
       </div>
 
 
-      <div class="level">
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/b1.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">Luigi is bending his leg.</p>
-            </div>
+        <!-- Video Row Section -->
+        <div class="video-row">
+          <!-- Video 1 Container -->
+          <div class="video-container">
+              <video controls autoplay muted loop>
+                  <source src="static/videos/demo/13.mp4" type="video/mp4">
+              </video>
+              <div class="caption">The man reaches to the ground for something places it on the table then reaches for another thing. A person is acting like a monkey. A person takes a quick step backwards and to their left. A person pokes their right hand along the ground, like they might be planting seeds.</div>
+          </div>
+
+          <!-- Video 2 Container -->
+          <div class="video-container">
+              <video controls autoplay muted loop>
+                  <source src="static/videos/demo/14.mp4" type="video/mp4">
+              </video>
+              <div class="caption">The person makes a right turn. A person grabbing something in front of them, swinging it around to the side then throwing it overhead.</div>
+          </div>
+
+          <!-- Video 3 Container -->
+          <div class="video-container">
+              <video controls autoplay muted loop>
+                  <source src="static/videos/demo/15.mp4" type="video/mp4">
+              </video>
+              <div class="caption">A person is leaning and checking their surroundings. A person slowly moved in right direction. A person moves their left arm up and the right arm toward their chest as a gesture.</div>
+          </div>
+      </div>      
+
+
+    </div>
+  </div>
+</section>  
+
+
+<!-- <section class="hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Comparsion</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/somersault.mp4"
+            type="video/mp4">
+          </video>
+          <div class="video-description">
+            <p style="height: 10px;">&nbsp;</p><br>
+            <p>The character performs a <b>backflip</b> when doing <b>exercise</b>.</p><br>
+            <p style="height: 5px;">&nbsp;</p>
         </div>
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/b2.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">Luigi is doing kung fu.</p>
-            </div>
         </div>
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/b3.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">Luigi is rolling his hands.</p>
-            </div>
+
+
         </div>
       </div>
+    </div>
+  </div>
+</section>   -->
 
-
-      <div class="level">
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/c1.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">Michelin Man is dancing zumba.</p>
-            </div>
-        </div>
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/c2.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">Michelin Man looking around himself.</p>
-            </div>
-        </div>
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/c3.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">Michelin Man raised up his hand and shake.</p>
-            </div>
-        </div>
-      </div>
-      
-      
-      <div class="level">
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/d1.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A yellow humanoid Yacuruna does a baseball hit.</p>
-            </div>
-        </div>
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/d2.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A yellow humanoid Yacuruna is crossing his arm.</p>
-            </div>
-        </div>
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/d3.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A yellow humanoid Yacuruna is jumping</p>
-            </div>
-        </div>
-      </div>      
-      
-
-      <div class="level">
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/e1.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A red robot is boxing.</p>
-            </div>
-        </div>
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/e2.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A red robot is doing hip pop dancing.</p>
-            </div>
-        </div>
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/e3.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A red robot is saluting.</p>
-            </div>
-        </div>
-      </div>      
-
-
-      <div class="level">
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/f1.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A bear runs then stands then runs again.</p>
-            </div>
-        </div>
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/f2.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A bear walks then stands.</p>
-            </div>
-        </div>
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/f3.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A bear runs then walks hesitantly.</p>
-            </div>
-        </div>
-      </div>      
-
-
-      <div class="level">
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/g1.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A jaguar attacks then dies.</p>
-            </div>
-        </div>
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/g2.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A jaguar gets up then walks.</p>
-            </div>
-        </div>
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/g3.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A bear walks then attacks.</p>
-            </div>
-        </div>
-      </div>      
-
-
-      <div class="level">
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/h1.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A wolf attacks then howls.</p>
-            </div>
-        </div>
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/h2.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A wolf runs then attacks then runs.</p>
-            </div>
-        </div>
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/h3.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A wolf walks then dies.</p>
-            </div>
-        </div>
-      </div>   
-
-
-      <div class="level">
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/i1.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A horse attacks, then walks backward, and attacks again.</p>
-            </div>
-        </div>
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/i2.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A horse walks, then rears up, and then walks again.</p>
-            </div>
-        </div>
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/i3.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A horse rears up and then walks forward.</p>
-            </div>
-        </div>
-      </div> 
-
-
-
-
-      <div class="level">
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/j1.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">An anaconda first coils up and then attacks.</p>
-            </div>
-        </div>
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/j2.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">An anaconda first swings its tail and then rises.</p>
-            </div>
-        </div>
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/j3.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">An anaconda first attacks and then spins.</p>
-            </div>
-        </div>
-      </div> 
-
-
-      <div class="level">
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/k1.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A rapator first walks, then attacks, and then walks again.</p>
-            </div>
-        </div>
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/k2.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A rapator first walks then dies.</p>
-            </div>
-        </div>
-        <div class="level-item">
-            <div class="model-container">
-                <model-viewer src="static/meshes/k3.glb" style="width: 100%; height: 300px;" autoplay shadow-intensity="1" tone-mapping="neutral" camera-controls touch-action="pan-y"></model-viewer>
-                <p style="height: 10px;">&nbsp;</p>
-                <p class="caption">A rapator first walks, then roars, and then walks again.</p>
-            </div>
-        </div>
-      </div> 
-
-
-</div>
-</div>
-</section>
 
 <section class="hero is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">More Visualization</h2>
+      <h2 class="title is-3">Comparsion</h2>
 
-      <div class="image-container">
-        <center>
-        <img src="static/images/motion.svg" style="width: 90%;">
-        <div class="image-description">
-          <p style="height: 10px;">&nbsp;</p><br>
-          <p>The figure illustrates various examples of animal motion generated by Motion
-            Avatar, demonstrating its ability to produce high-quality motion and mesh for both human
-            and animal characters.</p><br>
+
+            <!-- Video Row Section -->
+            <div class="video-row">
+              
+              <!-- Video 1 Container -->
+              <div class="video-container">
+                <div class="caption" style="font-size: 20px;">TEACH</div>
+              </div>
+
+              <!-- Vertical Bar -->
+              <div class="vertical-bar"></div>
+  
+              <!-- Video 2 Container -->
+              <div class="video-container">
+                <div class="caption" style="font-size: 20px;">PriorMDM</div>
+              </div>
+
+              <!-- Vertical Bar -->
+              <div class="vertical-bar"></div>
+  
+              <!-- Video 3 Container -->
+              <div class="video-container">
+                <div class="caption" style="font-size: 20px;">FlowMDM</div>
+              </div>
+
+              <!-- Vertical Bar -->
+              <div class="vertical-bar"></div>
+  
+              <!-- Video 4 Container -->
+              <div class="video-container">
+                <div class="caption" style="font-size: 20px;"><b>InfiniMotion</b></div>
+              </div>
+
+          </div>
+  
+
+
+            <!-- Video Row Section -->
+          <div class="video-row">
+            <!-- Video 1 Container -->
+            <div class="video-container">
+              <video controls autoplay muted loop>
+                    <source src="static/videos/compare/1teach.mp4" type="video/mp4">
+                </video>
+                <div class="caption">A man reaching both hands to the sky while walking, a man then jump upward for only once.</div>
+            </div>
+
+            <!-- Vertical Bar -->
+            <div class="vertical-bar"></div>
+
+            <!-- Video 2 Container -->
+            <div class="video-container">
+                <video controls autoplay muted loop>
+                    <source src="static/videos/compare/1priormdm.mp4" type="video/mp4">
+                </video>
+                <div class="caption">A man reaching both hands to the sky while walking, a man then jump upward for only once.</div>
+            </div>
+
+            <!-- Vertical Bar -->
+            <div class="vertical-bar"></div>
+
+            <!-- Video 3 Container -->
+            <div class="video-container">
+                <video controls autoplay muted loop>
+                    <source src="static/videos/compare/1flowmdm.mp4" type="video/mp4">
+                </video>
+                <div class="caption">A man reaching both hands to the sky while walking, a man then jump upward for only once.</div>
+            </div>
+
+
+            <!-- Vertical Bar -->
+            <div class="vertical-bar"></div>
+
+            <!-- Video 4 Container -->
+            <div class="video-container">
+                <video controls autoplay muted loop>
+                    <source src="static/videos/compare/1infinimotion.mp4" type="video/mp4">
+                </video>
+                <div class="caption">A man reaching both hands to the sky while walking, a man then jump upward for only once.</div>
+            </div>
         </div>
-        </center>
+
+
+          <!-- Video Row Section -->
+          <div class="video-row">
+            <!-- Video 1 Container -->
+            <div class="video-container">
+              <video controls autoplay muted loop>
+                    <source src="static/videos/compare/2teach.mp4" type="video/mp4">
+                </video>
+                <div class="caption">A man doing a frog jump forward, a man squat on the ground.</div>
+            </div>
+
+            <!-- Vertical Bar -->
+            <div class="vertical-bar"></div>
+
+            <!-- Video 2 Container -->
+            <div class="video-container">
+                <video controls autoplay muted loop>
+                    <source src="static/videos/compare/2priormdm.mp4" type="video/mp4">
+                </video>
+                <div class="caption">A man doing a frog jump forward, a man squat on the ground.</div>
+            </div>
+
+            <!-- Vertical Bar -->
+            <div class="vertical-bar"></div>
+
+            <!-- Video 3 Container -->
+            <div class="video-container">
+                <video controls autoplay muted loop>
+                    <source src="static/videos/compare/2flowmdm.mp4" type="video/mp4">
+                </video>
+                <div class="caption">A man doing a frog jump forward, a man squat on the ground.</div>
+            </div>
+
+
+            <!-- Vertical Bar -->
+            <div class="vertical-bar"></div>
+
+            <!-- Video 4 Container -->
+            <div class="video-container">
+                <video controls autoplay muted loop>
+                    <source src="static/videos/compare/2infinimotion.mp4" type="video/mp4">
+                </video>
+                <div class="caption">A man doing a frog jump forward, a man squat on the ground.</div>
+            </div>
+        </div>
+
+
+
+        <!-- Video Row Section -->
+        <div class="video-row">
+          <!-- Video 1 Container -->
+          <div class="video-container">
+            <video controls autoplay muted loop>
+                  <source src="static/videos/compare/3teach.mp4" type="video/mp4">
+              </video>
+              <div class="caption">The man walk forward, the man stops and raised up hands .</div>
+          </div>
+
+          <!-- Vertical Bar -->
+          <div class="vertical-bar"></div>
+
+          <!-- Video 2 Container -->
+          <div class="video-container">
+              <video controls autoplay muted loop>
+                  <source src="static/videos/compare/3priormdm.mp4" type="video/mp4">
+              </video>
+              <div class="caption">The man walk forward, the man stops and raised up hands .</div>
+          </div>
+
+          <!-- Vertical Bar -->
+          <div class="vertical-bar"></div>
+
+          <!-- Video 3 Container -->
+          <div class="video-container">
+              <video controls autoplay muted loop>
+                  <source src="static/videos/compare/3flowmdm.mp4" type="video/mp4">
+              </video>
+              <div class="caption">The man walk forward, the man stops and raised up hands .</div>
+          </div>
+
+
+          <!-- Vertical Bar -->
+          <div class="vertical-bar"></div>
+
+          <!-- Video 4 Container -->
+          <div class="video-container">
+              <video controls autoplay muted loop>
+                  <source src="static/videos/compare/3infinimotion.mp4" type="video/mp4">
+              </video>
+              <div class="caption">The man walk forward, the man stops and raised up hands .</div>
+          </div>
       </div>
-</div>
-</div>
-</section>
 
 
-<section class="hero is-small">
-  <div class="hero-body">
+
+       
+    </div>
+  </div>
+</section> 
+
+
+
+
+
+
+
+
+<section class="section hero is-small">
+  <div class="my-hero-body">
     <div class="container">
-      <h2 class="title is-3">Methodology</h2>
-
-      <div class="image-container">
-        <center>
-        <img src="static/images/main-1.svg" style="width: 65%;">
-        <div class="image-description">
-          <p style="height: 10px;">&nbsp;</p><br>
-          <p><b>Motion Avatar</b> utilizes a LLM-agent based approach to manage user queries and produce tailored
-            prompts. These prompts are designed to facilitate both the generation of motion sequences and the creation of
-            3D meshes. Motion generation follows an autoregressive process, while mesh generation operates within an image-to-3D framework. Subsequently, the generated mesh undergoes an automatic rigging process, allowing the motion
-            to be retargeted to the rigged mesh.</p><br>
-        </div>
-        </center>
-      </div>
+  <h2 class="title is-3">Methodology</h2>
 </div>
+
+<p style="height: 50px;">&nbsp;</p>
+
+  <div class="image-container">
+    <center>
+    <img src="static/images/architecture.svg" style="width: 50%;">
+    <div class="image-description">
+      <p style="height: 10px;">&nbsp;</p><br>
+      <p>This diagram illustrates the main architecture of our proposed method, InfiniMotion. The core of InfiniMotion is (d) a Mamba-in-Mamba structure that recursively updates the memory of both the Transformer and Mamba to support long motion generation. Components (a) and (c) illustrate the similarity-based masking applied to the temporal and spatial dimensions, respectively. (b) shows the fundamental building block of InfiniMotion, the Hybrid Masking Block, which consists of the Mask Temporal Mamba and Mask Spatial Transformer to process temporal and spatial information separately.<br>
+    </div>
+    </center>
+  </div>
+
 </div>
 </section>
 
-<section class="hero is-light">
-  <div class="hero-body">
+<section class="section hero is-light">
+  <div class="my-hero-body">
     <div class="container">
-      <h2 class="title is-3">Dataset</h2>
-
-      <div class="image-container">
-        <center>
-        <img src="static/images/zoogen.svg" style="width: 65%;">
-        <div class="image-description">
-          <p style="height: 10px;">&nbsp;</p><br>
-          <p>The diagram illustrates the process of our proposed <b>ZooGen</b>. Initially, <a href="https://sinmdm.github.io/SinMDM-page/" style="color: blue;">SinMDM</a> is employed to edit and enhance motion within <a href="https://truebones.gumroad.com/l/skZMC" style="color: blue;">Truebones Zoo</a>. Subsequently, 
-            <a href="https://github.com/DAMO-NLP-SG/Video-LLaMA" style="color: blue;">Video-LLaMA</a> is utilized to describe the motion in a paragraph, followed by refinement using
-            <a href="https://huggingface.co/meta-llama/Meta-Llama-3-70B" style="color: blue;">LLaMA-70B</a>. Finally, human review is conducted on the motion captions, which are
-            then gathered as textual descriptions in the <b>Zoo-300K</b> dataset</p><br>
-        </div>
-        </center>
-      </div>
+  <h2 class="title is-3">Performance</h2>
 </div>
+
+<p style="height: 50px;">&nbsp;</p>
+
+  <div class="image-container">
+    <center>
+    <img src="static/images/top.png" style="width: 60%;">
+    <div class="image-description">
+      <p style="height: 10px;">&nbsp;</p><br>
+      <p><b>InfiniMotion</b> presents a <b>Mamba-in-Mamba</b> architecture that recurrently updates both the Transformer's and Mamba's memory to enable efficient and consistent long-motion generation.</p><br>
+    </div>
+    </center>
+  </div>
+
 </div>
 </section>
-
 
 
 <!-- Paper poster -->
@@ -610,22 +774,24 @@ serves as a valuable resource for the community.
 <!--End paper poster -->
 
 
+
+
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{zhang2024motion,
-  title={Motion Avatar: Generate Human and Animal Avatars with Arbitrary Motion},
-  author={Zhang, Zeyu and Wang, Yiran and Wu, Biao and Chen, Shuo and Zhang, Zhiyuan and Huang, Shiya and Zhang, Wenbo and Fang, Meng and Chen, Ling and Zhao, Yang},
-  journal={arXiv preprint arXiv:2405.11286},
+      <pre><code>@article{zhang2024infinimotion,
+  title={Infinimotion: Mamba boosts memory in transformer for arbitrary long motion generation},
+  author={Zhang, Zeyu and Liu, Akide and Chen, Qi and Chen, Feng and Reid, Ian and Hartley, Richard and Zhuang, Bohan and Tang, Hao},
+  journal={arXiv preprint arXiv:2407.10061},
   year={2024}
 }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
 
-
-  <!-- <footer class="footer">
+<!-- 
+  <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">

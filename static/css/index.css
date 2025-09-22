@@ -60,7 +60,7 @@ body {
     width: fit-content;
     font-weight: bold;
 }
-
+eql-cntrb
 .publication-awards {
     color: #ff3860;
     width: fit-content;
@@ -125,6 +125,11 @@ body {
   margin: 0;
 }
 
+.results-carousel .video-description {
+  font-size: 20px;
+  text-align: center;
+}
+
 .slider-pagination .slider-page {
   background: #000000;
 }
@@ -153,28 +158,38 @@ body {
   padding-bottom: 0;
 }
 
-.level {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-.level-item {
-  flex: 1;
-  max-width: 33%; /* Ensure equal width distribution */
-  box-sizing: border-box;
-  padding: 10px;
-  text-align: center;
-  align-self: flex-start;
-}
-.model-container {
-  width: 100%;
-}
-.caption {
-  margin-top: 10px;
-  word-wrap: break-word;
-  white-space: normal;
-  width: 100%;
-  display: inline-block;
+/* Container to hold the row of videos */
+.video-row {
+  display: flex; /* Align items horizontally */
+  justify-content: center; /* Center the entire row */
+  gap: 20px; /* Space between the videos */
+  margin-top: 20px; /* Top margin for spacing */
 }
 
+/* Individual video container */
+.video-container {
+  text-align: center; /* Center align text inside the container */
+  width: 30%; /* Set width to make them fit in a row */
+}
+
+.vertical-bar {
+  width: 2px; /* Thickness of the vertical bar */
+  background-color: #ccc; /* Bar color */
+  height: auto; /* Let it stretch as tall as the container */
+  margin: 0 10px; /* Optional margin for spacing */
+}
+
+/* Styling for video elements */
+video {
+  width: 100%; /* Make video width responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Removes small gaps below the video */
+}
+
+/* Caption styling */
+.caption {
+  margin-top: 10px; /* Space between the video and caption */
+  font-size: 16px; /* Font size for the caption */
+  color: #333; /* Caption text color */
+}
 
